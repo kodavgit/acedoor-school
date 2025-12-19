@@ -19,14 +19,15 @@
         <div class="menu-position">
             <div class="main-nav-container">
                 <a href="index.html" class="logo">
-                    <img src="New-images/logo2.png" alt="">
+                    <img src="images/logo2.png" alt="">
                 </a>
         
                 <nav>
                     <div class="navbar">
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
-                        <a href="admission.html">Admission</a>
+                        <a href="admission.html">Academics</a>
+                        <a href="https://www.acedoorschools.edung.org/acedoorschools/authentication">E-portal</a>
                         <a href="gallery.html">Gallery</a>
                         <a href="contact.html">Contact</a>
                         <span></span>
@@ -65,19 +66,31 @@
         <div class="vision-mission-content">
             <div class="address">
                 <h2>ACEDOOR SCHOOL</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque molestiae quia consectetur officiis expedita enim maiores explicabo, tempore cumque ab error. Nemo incidunt corporis voluptatibus, numquam vitae temporibus ratione enim saepe soluta ex vero id sapiente, fuga repellendus amet. </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque molestiae quia consectetur officiis expedita enim maiores explicabo, tempore cumque ab error. Nemo incidunt corporis voluptatibus, numquam vitae temporibus ratione enim saepe soluta ex vero id sapiente, fuga repellendus amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veniam necessitatibus molestias, soluta aspernatur beatae harum fugit, neque deleniti nam incidunt qui in quae exercitationem impedit officiis! Numquam, eos repudiandae. </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque molestiae quia consectetur officiis expedita enim maiores explicabo, tempore cumque ab error. Nemo incidunt corporis voluptatibus, numquam vitae temporibus ratione enim saepe soluta ex vero id sapiente, fuga repellendus amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veniam necessitatibus molestias, soluta aspernatur beatae harum fugit, neque deleniti nam incidunt qui in quae exercitationem impedit officiis! Numquam, eos repudiandae. </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque molestiae quia consectetur officiis expedita enim maiores explicabo, tempore cumque ab error. Nemo incidunt corporis voluptatibus, numquam vitae temporibus ratione enim saepe soluta ex vero id sapiente, fuga repellendus amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veniam necessitatibus molestias, soluta aspernatur beatae harum fugit, neque deleniti nam incidunt qui in quae exercitationem impedit officiis! Numquam, eos repudiandae. </p>
             </div>
             <div class="mission">
                 <h2>THE MISSION</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus enim debitis commodi ipsa possimus quis cumque, sint pariatur velit. Tempore iste sit quae praesentium nihil veritatis incidunt, autem ex, obcaecati provident voluptatum rerum recusandae ab, adipisci exercitationem nisi ut aspernatur? Aliquam itaque ipsa, fuga ad iure est consequuntur ullam!</p>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus enim debitis commodi ipsa possimus quis cumque, sint pariatur velit. Tempore iste sit quae praesentium nihil veritatis incidunt, autem ex, obcaecati provident voluptatum rerum recusandae ab, adipisci exercitationem nisi ut aspernatur? Aliquam itaque ipsa, fuga ad iure est consequuntur ullam!</p>
             </div>
             <div class="vision">
                 <h2>OUR FOCUS/VISION</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio temporibus libero corrupti fuga quisquam fugit laudantium perspiciatis exercitationem modi eligendi ullam magni aspernatur aliquid odio iure corporis, quaerat deleniti sequi. In porro, ipsum soluta suscipit iusto harum, officiis deserunt tempore aspernatur repudiandae assumenda necessitatibus illum?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio temporibus lib corrupti fuga quisquam fugit laudantium perspiciatis exercitationem modi eligendi ullam magni aspernatur aliquid odio iure corporis, quaerat deleniti sequi. In porro, ipsum soluta suscipit iusto harum, officiis deserunt tempore aspernatur repudiandae assumenda necessitatibus illum?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio temporibus libero corrupti fuga quisquam fugit laudantium perspiciatis exercitationem modi eligendi ullam magni aspernatur aliquid odio iure corporis, quaerat deleniti sequi. In porro, ipsum soluta suscipit iusto harum, officiis deserunt tempore aspernatur repudiandae assumenda necessitatibus illum?</p>
             </div>
         </div>
         <div class="vision-img vision-width">
-            <img src="New-images/gallery-1675672523.jpg" alt="">
+            <img src="images/wellcome2.jpg" alt="">
+            <img src="images/gallery-1675672523.jpg" alt="">
+            <img src="images/logo2.png" alt="">
         </div>
     </div>
 </section>
@@ -156,10 +169,24 @@
 <!-- footer section ends -->
 
 <script>
+    // footer current year
     const year = document.getElementById("year")
     const thisYear = new Date().getFullYear()
     year.setAttribute("datetime", thisYear)
     year.textContent = thisYear
+
+
+    // sticky navbar
+    const mainNav = document.querySelector(".main-nav")
+    const mainNavOffset = mainNav.offsetTop
+
+    window.addEventListener('scroll', () => {
+    if(window.pageYOffset >= mainNavOffset + 50) {
+        mainNav.classList.add("fixy")
+    }else {
+        mainNav.classList.remove("fixy")
+    }
+    })
 </script>
 
 

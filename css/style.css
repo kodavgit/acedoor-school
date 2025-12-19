@@ -32,7 +32,7 @@ body {
     --second-text-color: #eae9f1;
     --third-text-color: #bebcbc;
     --fourth-text-color: #f7d1d1ca;
-    --main-color: #2a02db;
+    --main-color: #1b465f;
     --nav-color: #0f5dd3;
     --nav2-color:#171175;
     --btn-color: #17301d;
@@ -156,10 +156,11 @@ p {
 }
 
 .btn {
-    background: var(--main-color);
+    background: var(--primary2-color);
     border-radius: 5px;
     padding: 7px 10px;
     font-size: 15px;
+    font-weight: 600;
     color: var(--nav-color);
     transition: .5s ease;
     cursor: pointer;
@@ -175,7 +176,7 @@ p {
 /* main nav */
 .main-nav {
     width: 100%;
-    background: #dadaf8;
+    background: #f8f8fc;
     z-index: 99;
 }
 .main-nav-container {
@@ -191,7 +192,7 @@ p {
     position: fixed;
     top: 0;
     border-bottom: 5px solid var(--main-color);
-    background: #e7f9ec;
+    background: #f8f8fc;
     transition: 1s;
 }
 
@@ -259,19 +260,23 @@ nav {
     left: 0;
 }
 .navbar a:nth-child(2):hover~span {
-    left: 91px;
+    left: 93px;
 }
 .navbar a:nth-child(3):hover~span {
     left: 180px;
     width: 130px;
 }
 .navbar a:nth-child(4):hover~span {
-    left: 307px;
-    width: 100px;
+    left: 309px;
+    width: 109px;
 }
 .navbar a:nth-child(5):hover~span {
-    left: 408px;
+    left: 416px;
     width: 105px;
+}
+.navbar a:nth-child(6):hover~span {
+    left: 518px;
+    width: 109px;
 }
 
 .main-nav-container .open-menu{
@@ -306,19 +311,19 @@ nav {
   }
   
 .swiper-slide .img1 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../New-images/admission2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/admission2.jpg);
     }
 .swiper-slide .img2 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../New-images/admission2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/admission2.jpg);
 }
 .swiper-slide .img3 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../New-images/gallery-1675672368.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/gallery-1675672368.jpg);
 }
 .swiper-slide .img4 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../New-images/gallery-1675672576.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/gallery-1675672576.jpg);
 }
 .swiper-slide .img5 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../New-images/gallery-1675672523.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/gallery-1675672523.jpg);
 }
   
   .swiper-slide .image-content {
@@ -493,7 +498,7 @@ nav {
 .about-content {
     padding: 0 30px;
     text-align: justify;
-    border: 1px solid rgb(71, 10, 10);
+    box-shadow: 0 0 10px var(--nav-color);    
     background-color: var(--second-text-color);
 }
 
@@ -551,9 +556,10 @@ nav {
 .image-box img {
     flex: 0 0 300px;
     border: 10px solid var(--nav-color);
+    box-shadow: 0 0 10px var(--nav-color);
     width: 300px;
     height: 230px;
-    border-radius: 20px 5px;
+    border-radius: 0 40px;
     align-content: center;
 }
 
@@ -595,7 +601,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 48px;
 }
 
 .school-classes h1 {
@@ -604,20 +610,38 @@ nav {
 }
 
 .creche {
-    border: 2px double red;
+    border-radius: 0 40px;
+    transition: 0.5s;
 }
+.creche:hover {
+    border: 7px solid red;
+    transform: scale(1.1);
+}
+
 .nursery {
-    border: 2px double purple;
+    border-radius: 0 40px;
+    transition: 0.5s;
 }
+.nursery:hover {
+    border: 7px solid purple;
+    transform: scale(1.1);
+}
+
 .primary {
-    border: 2px double blue;
+    border-radius: 0 40px;
+    transition: 0.5s;
+}
+.primary:hover {
+    border: 7px solid blue;
+    transform: scale(1.1);
 }
 
 .sch-card {
     width: 340px;
     height: 500px;
-    /* margin: 20px 30px; */
+    box-shadow: 0 0 10px var(--nav-color);
 }
+
 .sch-card a {
     color: var(--first-text-color);
     background-color: var(--nav-color);
@@ -637,9 +661,10 @@ nav {
     transition: .5s ease;
 }
 
+.sch-card:hover img,
 .sch-card-img:hover img{
     transform: scale(1.1);
-    border-radius: 10px;
+    
 }
 
 .school-card-content{
@@ -648,7 +673,7 @@ nav {
 
 .sch-card h1 {
     margin: 0;
-    color: var(--main-color);
+    color: var(--primary2-color);
 }
 
 .sch-card p {
@@ -657,10 +682,11 @@ nav {
 }
 
 .school-card-content .btn {
-    background: var(--main-color);
+    background: var(--primary2-color);
     border-radius: 5px;
     padding: 7px 10px;
     font-size: 15px;
+    font-weight: 600;
     color: var(--first-text-color);
     transition: .5s ease;
     cursor: pointer;
@@ -788,7 +814,7 @@ nav {
 .news-box {
     width: 330px;
     height: 250px;
-    border: 10px solid var(--btn3-color);
+    border: 10px solid purple;
     border-radius: 0 40px;
 }
 
@@ -805,7 +831,7 @@ nav {
 }
 
 .upcoming-events {
-    background-color: #a60303;
+    background-color: purple;
     color: #eceaea;
     width: 300px;
     font-family: "Vidaloka", serif;
@@ -897,7 +923,7 @@ nav {
 
 /* line section */
 .line-section {
-    background: linear-gradient(#0000009d, #000000a4), url(../New-images/1.png);
+    background: linear-gradient(#0000009d, #000000a4), url(../images/1.png);
     background-position: center;
     background-size: cover;
     height: 16em;
@@ -1051,7 +1077,7 @@ nav {
 .aside-1 .name h4 {
     font-size: 22px;
     font-weight: 800;
-    color: var(--primary-color);
+    color: var(--primary2-color);
     opacity: .8;
 }
 

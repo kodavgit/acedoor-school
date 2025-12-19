@@ -29,14 +29,15 @@
         <div class="menu-position">
             <div class="main-nav-container">
                 <a href="index.html" class="logo">
-                    <img src="New-images/logo2.png" alt="">
+                    <img src="images/logo2.png" alt="">
                 </a>
         
                 <nav>
                     <div class="navbar">
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
-                        <a href="admission.html">Admission</a>
+                        <a href="admission.html">Academics</a>
+                        <a href="https://www.acedoorschools.edung.org/acedoorschools/authentication">E-portal</a>
                         <a href="gallery.html">Gallery</a>
                         <a href="contact.html">Contact</a>
                         <span></span>
@@ -252,11 +253,27 @@
 <!-- footer section ends -->
 
 <script>
+    // footer current year
     const year = document.getElementById("year")
     const thisYear = new Date().getFullYear()
     year.setAttribute("datetime", thisYear)
     year.textContent = thisYear
+
+
+    // sticky navbar
+    const mainNav = document.querySelector(".main-nav")
+    const mainNavOffset = mainNav.offsetTop
+
+    window.addEventListener('scroll', () => {
+    if(window.pageYOffset >= mainNavOffset + 50) {
+        mainNav.classList.add("fixy")
+    }else {
+        mainNav.classList.remove("fixy")
+    }
+    })
 </script>
+
+
 
 <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 <script src="js/script.js"></script>
