@@ -325,7 +325,7 @@ nav {
 
 
 /* board member */
-
+/* 
 .board-header {
     text-align: center;
     padding: 0 0 50px 0;
@@ -386,95 +386,94 @@ nav {
 .founders-note-content p {
     text-align: justify;
 }
-
+ */
 
 
 
 
 /* Academics section */
 
-.academics-section {
-    padding: 70px 0;
+
+
+.academic-section {
+    padding: 70px 50px;
 }
 
-.academics {
+.overview h1 {
+    text-align: center;
+}
+
+.overview-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
-.academics-image {
-    width: 50%;
+.departments,
+.second-departments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 100px 0;
 }
 
-.academics-content {
-    width: 50%;
-    text-align: justify;
+.primary-department img,
+.nursery-department img,
+.creche-department img{
+    width: 35em;
 }
 
-.academics-image img {
-    width: 430px;
-    height: 304px;
-}
-
-.academics h2 {
-    color: rgb(180, 7, 7);
-    font-size: 30px;
-    font-family: "Vidaloka", serif;
-    font-weight: 900;
-}
-
-.academics p {
-    font-size: 14px;
+.academic-section hr {
+    width: 100%;
+    height: 5px;
+    background-color: red;
 }
 
 
 /* line section */
+
+
+/* line section */
 .line-section {
-    background-color: rgb(131, 91, 11);
-    height: 5em;
-    width: 100%;
+    background: linear-gradient(#0000009d, #000000a4), url(../images/1.png);
+    background-position: center;
+    background-size: cover;
+    height: 16em;
+    width: 96%;
+    border-radius: 0 3rem;
+    margin: 0 auto;
+}
+
+.line-wrapper {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.line-section hr {
-    height: 6px;
-    width: 100%;
-    background-color: #829b05;
-    border: 2px solid #1eb7c2;
+.line-content h1 {
+    color: #fff;
+    font-size: 3em;
 }
 
-.line-section::before {
-    content: '';
-    height: 13px;
-    width: 13px;
-    position: absolute;
-    left: 400px;
-    background-color: #f13405;
-    border: 5px double #fff;
-    transform: rotate(133deg);
+.line-content h2 {
+    color: var(--btn3-color);
 }
 
-.line-section::after {
-    content: '';
-    height: 13px;
-    width: 13px;
-    position: absolute;
-    right: 400px;
-    background-color: #f13405;
-    border: 5px double #fff;
-    transform: rotate(133deg);
+.line-wrapper a{
+    color: #fff;
+    padding: 20px 15px ;
 }
+
 
 
 /* admmission section starts */
 
-.admission-form {
+/* .admission-form {
     padding: 50px 20px;
 }
 
@@ -536,11 +535,11 @@ nav {
     color: #fff;
     padding: 15px;
     border-radius: 25px;
-}
+} */
 
 /* courses section */
 
-.courses {
+/* .courses {
     width: 85%;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -595,7 +594,7 @@ nav {
 
 .courses-content-wrapper .c-width2 {
     width: 50%;
-}
+} */
 
 
 /* image gallery section */
@@ -908,21 +907,12 @@ nav {
         right: 10rem;
         box-shadow: -1px 1px 10px grey;
     }
-    .academics {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .academics-image img {
-        width: 100%;
-    }
+
 }
 
 @media (max-width: 1138px) {
     .navbar a {
         font-size: 17px;
-    }
-    .board-member {
-        align-items: flex-start;
     }
 }
 @media (max-width: 1045px) {
@@ -943,47 +933,16 @@ nav {
         gap: 20px;
         width: 95%;
     }
-    .board {
-        font-size: 14px;
-    }
-    .courses-content-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .courses-content-wrapper .c-width1 {
-        width: 100%;
-    }
-    .courses-content-wrapper .c-width2 {
-        width: 100%;
-    }
     .contact-form-group {
         flex-wrap: wrap;
         gap: 0;
     }
 }  
 @media (max-width: 849px) {
-    .board-member,
     .founders-note {
         flex-direction: column;
         align-items: center;
         width: 95%;
-    }
-    .board-img {
-        width: 85%;
-    }
-    .board-member-content,
-    .founders-note-content {
-        width: 80%;
-    }
-    .founders-note-content {
-        order: 2;
-    }
-    .academics-image {
-        width: 90%;
-    }
-    .academics-content {
-        width: 90%;
     }
     .contact-info-wrapper {
         justify-content: center;
@@ -1012,9 +971,7 @@ nav {
 }
 
 @media (max-width: 588px) {
-    .admission-form {
-        padding: 20px 5%;
-    }
+    
     .form-group-admin {
         width: 100%;
     }
@@ -1035,25 +992,3 @@ nav {
         margin: 30px 0;
     }
 }  
-@media (max-width: 482px) {
-    .courses-images .img1 {
-        width: 300px;
-        height: 200px;
-    }
-    
-    .courses-images .img2 {
-        width: 300px;
-        height: 400px;
-    }
-} 
-@media (max-width: 347px) {
-    .courses-images .img1 {
-        width: 280px;
-        height: 180px;
-    }
-    
-    .courses-images .img2 {
-        width: 280px;
-        height: 380px;
-    }
-} 

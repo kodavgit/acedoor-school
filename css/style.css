@@ -824,11 +824,32 @@ nav {
     border-radius: 0 40px;
 }
 
+.news-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
 .news-wrapper h3 {
     text-align: center;
     font-size: 16px;
     color: #fff;
+    background: purple;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);   
+    padding: 40px 9px;
+    width: 80%;
+    border-radius: 0 40px;
+    transition: 0.5s;
 }
+
+.news-wrapper:hover h3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 .upcoming-events {
     background-color: purple;
@@ -836,6 +857,7 @@ nav {
     width: 300px;
     font-family: "Vidaloka", serif;
     font-weight: 900;
+    border-radius: 0 40px;
 }
 
 .upcoming-events-box {
@@ -853,6 +875,10 @@ nav {
 
 .upcoming-events-box h2 {
     font-size: 20px;
+}
+
+.news-wrapper h2 {
+    text-align: center;
 }
 
 .upcoming-event-container {
@@ -912,6 +938,19 @@ nav {
     color: var(--main-color);
     font-size: 15px;
 }
+
+
+
+
+
+
+
+
+/* hover effect */
+
+
+
+
 
 
 
