@@ -43,26 +43,6 @@ body {
 }
 
 
-/* .social-link .whatsapp:hover {
-    color: #fff;
-    background: #02dc0d;
-}
-
-.social-link .facebook:hover {
-    color: #fff;
-    background: #0502d4;
-}
-
-.social-link .youtube:hover {
-    color: #c30000;
-    background: #fff;
-}
-
-.social-link .instagram:hover {
-    color: #fff;
-    background: linear-gradient(to bottom right, #0202e2, #e201d3, #e20000, #e7e702);
-} */
-
 p {
     color: #2c2c2c;
     font-weight: 500;
@@ -71,49 +51,6 @@ p {
 .pad-5 {
     padding: 0 5%;
 }
-
-/* header section */
-/* .header-section {
-    width: 100%;
-    height: 100vh;
-} */
-/* top nav */
-.top-nav {
-    background-color: #1b465f;
-}
-
-.top-nav-background {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    height: 55px;
-}
-
-.top-nav-background a {
-    color: #fff;
-}
-
-/* .social-link {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.social-link a {
-    color: #fff;
-    margin-right: 8px;
-    border-radius: 50%;
-    padding: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #565a77;
-    transition: .2s;
-} */
-
 
 
 
@@ -324,76 +261,7 @@ nav {
 }
 
 
-/* board member */
-/* 
-.board-header {
-    text-align: center;
-    padding: 0 0 50px 0;
-    color: var(--main-color);
-}
-.board-header p {
-    color: var(--nav2-color);
-    font-weight: 700;
-}
-
-.board-header h3 {
-    color: var(--nav2-color);
-}
-
-.board-member,
-.founders-note {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 80%;
-    padding-bottom: 80px;
-    margin: 0 auto;
-}
-
-.board-img {
-    width: 60%;
-    background-color: #4eabb551;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.board-img h3{
-    color: var(--nav2-color);
-    text-align: center;
-}
-
-.board-img img {
-    width: 90%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.board-member-content,
-.founders-note-content {
-    width: 50%;
-}
-
-.board-member-content h1,
-.founders-note-content h1 {
-    text-align: center;
-    color: var(--main-color);
-
-}
-.board-member-content p,
-.founders-note-content p {
-    text-align: justify;
-}
- */
-
-
-
-
 /* Academics section */
-
-
 
 .academic-section {
     padding: 70px 50px;
@@ -433,8 +301,6 @@ nav {
 }
 
 
-/* line section */
-
 
 /* line section */
 .line-section {
@@ -469,132 +335,6 @@ nav {
     padding: 20px 15px ;
 }
 
-
-
-/* admmission section starts */
-
-/* .admission-form {
-    padding: 50px 20px;
-}
-
-.admission p {
-    text-align: justify;
-}
-.admission h1 {
-    color: var(--main-color);
-}
-
-.form-group-admin {
-    width: 90%;
-    margin: 0 auto 20px;
-}
-
-.form-group-admin label {
-    color: var(--nav2-color);
-}
-
-.form-group-admin .radio-label{
-    color: var(--third-text-color);
-}
-
-.form-group-admin label span {
-    color: var(--main-color);
-    font-size: 1.3rem;
-}
-
-.form-control {
-    width: 100%;
-    height: 2rem;
-    border: 2px solid #656363;
-    border-radius: 5px;
-    background-color: #efecec;
-}
-
-.inline-part {
-    display: flex;
-    gap: 20px;
-}
-
-.date-w {
-    width: 70%;
-}
-
-.gender-w {
-    width: 30%;
-}
-
-.form-control:focus {
-    border: 3px solid var(--main-color);
-    outline: none;
-}
-
-.form-btn2 {
-    text-align: center;
-}
-.form-btn2 .btn {
-    color: #fff;
-    padding: 15px;
-    border-radius: 25px;
-} */
-
-/* courses section */
-
-/* .courses {
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 60px;
-}
-
-.courses h1 {
-    color: var(--main-color);
-}
-
-.courses h3 {
-    color: var(--nav-color);
-}
-
-.courses-header {
-    text-align: center;
-    padding: 50px 0;
-
-}
-
-.courses-content h1 {
-    text-align: center;
-}
-
-.courses-curriculums li {
-    color: #797373;
-}
-
-.courses-content-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.courses-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.courses-images .img1 {
-    width: 400px;
-    height: 300px;
-}
-
-.courses-images .img2 {
-    width: 400px;
-    height: 400px;
-}
-
-.courses-content-wrapper .c-width1 {
-    width: 50%;
-}
-
-.courses-content-wrapper .c-width2 {
-    width: 50%;
-} */
 
 
 /* image gallery section */
