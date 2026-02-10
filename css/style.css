@@ -603,9 +603,16 @@ nav {
     margin-bottom: 9em;
 }
 
-.school-classes h1 {
+.sch-card {
+    width: 340px;
+    height: 460px;
+    box-shadow: 0 0 10px var(--nav-color);
+}
+
+.school-card-content h1 {
     font-family: "Vidaloka", serif;
     font-weight: 900;
+    color: var(--primary2-color);
 }
 
 .creche {
@@ -635,13 +642,7 @@ nav {
     transform: scale(1.1);
 }
 
-.sch-card {
-    width: 340px;
-    height: 540px;
-    box-shadow: 0 0 10px var(--nav-color);
-}
-
-.sch-card a {
+.school-card-content a {
     color: var(--first-text-color);
     background-color: var(--nav-color);
 }
@@ -667,15 +668,6 @@ nav {
 
 .school-card-content{
     padding: 0 10px;
-}
-
-.sch-card h1 {
-    color: var(--primary2-color);
-}
-
-.sch-card p {
-    text-align: justify;
-    font-size: 14px;
 }
 
 .school-card-content .btn {
