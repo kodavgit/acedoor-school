@@ -113,8 +113,9 @@ var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 3500,
+    delay: 2500,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -125,6 +126,8 @@ var swiper2 = new Swiper(".mySwiper2", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
 
 
 
