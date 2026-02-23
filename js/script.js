@@ -14,16 +14,50 @@ window.addEventListener('scroll', () => {
 
 
 // hamburger section
-const hamburger = document.querySelector(".open-menu")
-const hamburgerIcon = document.querySelector(".open-menu i")
-const navbar = document.querySelector(".navbar")
 
-hamburger.addEventListener("click", ()=>{
-  navbar.classList.toggle("open-nav-menu")
-  const isOpen = navbar.classList.contains("open-nav-menu")
+// const hamburger = document.querySelector(".open-menu")
+// const hamburgerIcon = document.querySelector(".open-menu i")
+// const navbar = document.querySelector(".navbar")
 
-  hamburgerIcon.classList = isOpen ? 'bx bx-x' : 'bx bx-menu'
-})
+// hamburger.addEventListener("click", ()=>{
+//   navbar.classList.toggle("open-nav-menu")
+//   const isOpen = navbar.classList.contains("open-nav-menu")
+
+//   hamburgerIcon.classList = isOpen ? 'bx bx-x' : 'bx bx-menu'
+// })
+
+
+
+
+
+
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+const icon = menuToggle.querySelector("i");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")) {
+        icon.classList.remove("bx-menu");
+        icon.classList.add("bx-x");
+    } else {
+        icon.classList.remove("bx-x");
+        icon.classList.add("bx-menu");
+    }
+});
+
+
+
+
+
+
+
+
+
+
 
 
 // header swiper section

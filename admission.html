@@ -34,7 +34,7 @@
                 </a>
         
                 <nav>
-                    <div class="navbar">
+                    <div class="navbar" id="navMenu">
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="admission.html">Academics</a>
@@ -44,15 +44,10 @@
                         <span></span>
                     </div>
                 </nav>
-                
-                <!-- menu start -->
-                    <div class="open-menu">
-                        <i class='bx bx-menu'></i>
-                    </div>
-                    <!-- <div class="close-menu">
-                        <i class='bx bx-x'></i>
-                    </div> -->
-                <!-- menu end -->
+
+                <div class="open-menu" id="menuToggle">
+                    <i class='bx bx-menu'></i>
+                </div> 
     
             </div>
         </div>
@@ -89,14 +84,18 @@
     <div class="departments">
         <div class="creche-department">
             <h2>Crèche Programme: A Gentle Start to Learning</h2>
-            <img src="images/creche.png" alt="">
+            <div class="creche-department-img-wrapper">
+                <img src="images/creche.png" alt="">
+            </div>
             <p>The school’s crèche programme is specially designed for infants and toddlers, providing a warm, secure, and loving environment that supports early development. At this stage, emphasis is placed on care, comfort, routine, and early stimulation. Experienced caregivers ensure that children receive individual attention, proper nutrition, and emotional support.</p>
             <p>Activities at the crèche level focus on sensory exploration, motor skill development, early communication, and social interaction. Through play, music, storytelling, and guided movement, children begin to develop foundational skills that prepare them for the nursery stage. Safety, hygiene, and child wellbeing remain top priorities, giving parents peace of mind while their children take their first steps into structured learning.</p>
         </div>
 
         <div class="nursery-department">
             <h2>Nursery Education: Building Strong Foundations</h2>
-            <img src="images/gallery-1677668252.jpeg" alt="">
+            <div class="nursery-department-img-wrapper">
+                <img src="images/gallery-1677668252.jpeg" alt="">
+            </div>
             <p>The nursery curriculum is thoughtfully crafted to support early childhood development and school readiness. At this level, learning is play-based, interactive, and engaging. Pupils are introduced to basic literacy and numeracy skills, phonics, early writing, number concepts, shapes, colours, and general knowledge.</p>
             <p>The nursery programme also emphasizes social skills, communication, creativity, and independence. Children are encouraged to express themselves, work collaboratively, and develop confidence in their abilities. Activities such as storytelling, arts and crafts, singing, role-play, and outdoor play help pupils learn naturally while having fun.</p>
             <p>Moral instruction, good manners, and positive values are introduced early, helping children develop respect, empathy, and self-discipline.</p>
@@ -123,7 +122,9 @@
     <div class="second-departments">
         <div class="primary-department">
             <h2>Primary School Curriculum: Academic Excellence and Holistic Growth</h2>
-            <img src="images/home-slider-1710323878.jpeg" alt="">
+            <div class="primary-department-img-wrapper">
+                <img src="images/home-slider-1710323878.jpeg" alt="">
+            </div>
             <p>The primary school curriculum is comprehensive, balanced, and aligned with national educational standards while incorporating innovative teaching methods. Core subjects include:</p>
             <ul>
                 <li>English Language</li>
@@ -168,136 +169,6 @@
 </section>
 
 <!-- academics section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- admission form section starts -->
-
-<!-- <section class="admission-form">
-
-<div class="admission form-group-admin">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quod culpa, ad tenetur quae harum molestias ipsam corporis doloremque necessitatibus aliquid ipsum mollitia facilis perspiciatis reiciendis maiores repellat nulla consequatur dolorum porro dolor non ullam enim quibusdam. Ut exercitationem nulla labore laboriosam cupiditate quo, eligendi perspiciatis ex, aliquam doloribus voluptate illo reprehenderit doloremque cumque.</p>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit repellat quos placeat nemo mollitia ab numquam in iste quaerat dolorum saepe soluta ex debitis, assumenda neque..</p>
-    
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quae ab porro nisi, debitis at earum, eos doloribus magnam quasi vero fugiat blanditiis tempora mollitia odio recusandae unde eum nam? Unde sequi quos facere!</p>
-
-    <h1 class="form-group-admin">Acedoor School Entrance Application</h1>
-
-    <form action="">
-        <div class="form-group-admin">
-            <label id="name-label" for="name">Applicant's Full Name <span>*</span></label> <br>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form-control"
-              placeholder="Enter Applicant's Name"
-              required
-            />
-        </div>
-
-        <div class="form-group-admin inline-part">
-            <div class="date-w">
-                <label id="date-label" for="date">Date of Birth <span>*</span></label> <br>
-                <input
-                  type="date"
-                  name="date"
-                  id="date"
-                  class="form-control"
-                  required
-                />
-            </div>
-    
-            <div class="gender-w">
-                <label id="gender-label" for="name">Gender <span>*</span></label> <br>
-            
-                <label class="radio-label"><input name="gender" value="male" type="radio" class="input-radio" />Male</label> <br>
-            
-                <label class="radio-label"><input name="gender" value="female" type="radio" class="input-radio"/>Female</label>
-            </div>
-        </div>
-
-
-        <div class="form-group-admin">
-            <label id="parent-name-label" for="name">Parent/Guardian's Full Name <span>*</span></label> <br>
-            <input
-              type="text"
-              name="parent-name"
-              id="parent-name"
-              class="form-control"
-              placeholder="Enter Parent's Name"
-              required
-            />
-        </div>
-
-
-        <div class="inline-part form-group-admin">
-            <div class="form-group-admin">
-                <label id="email-label" for="email">Preferred Email <span>*</span></label> <br>
-                <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-control"
-                placeholder="Enter Your Email"
-                required
-                />
-            </div>
-            <div class="form-group-admin">
-                <label id="number-label" for="number">Preferred Phone Number <span>*</span></label> <br>
-                <input
-                  type="number"
-                  name="Phone-number"
-                  id="phone-number"
-                  class="form-control"
-                  placeholder="Enter Your Phone number"
-                  required
-                />
-            </div>
-        </div>
-
-        <div class="form-group-admin">
-            <label id="address-label" for="name">Parent/Guardian's Permanent Home Address <span>*</span></label> <br>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              class="form-control"
-              placeholder="Enter Your Parmanent Home Address"
-              required
-            />
-        </div>
-
-        <div class="form-btn2">
-            <button class="btn" type="submit">Submit Application</button>
-        </div>
-    </form>
-
-</div>
-
-</section> -->
-
-<!-- admission form section ends -->
-
-
-
-
 
 
 
@@ -373,6 +244,7 @@
     year.textContent = thisYear
 
 
+
     // sticky navbar
     const mainNav = document.querySelector(".main-nav")
     const mainNavOffset = mainNav.offsetTop
@@ -384,11 +256,32 @@
         mainNav.classList.remove("fixy")
     }
     })
+
+
+
+    // hamburger section
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+    const icon = menuToggle.querySelector("i");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+
+        if(navMenu.classList.contains("active")) {
+            icon.classList.remove("bx-menu");
+            icon.classList.add("bx-x");
+        } else {
+            icon.classList.remove("bx-x");
+            icon.classList.add("bx-menu");
+        }
+    });
+
+
 </script>
 
 
 
 <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
 </body>
 </html>

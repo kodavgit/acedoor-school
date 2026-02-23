@@ -36,7 +36,7 @@
                 </a>
         
                 <nav>
-                    <div class="navbar">
+                    <div class="navbar" id="navMenu">
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="admission.html">Academics</a>
@@ -46,15 +46,10 @@
                         <span></span>
                     </div>
                 </nav>
-                
-                <!-- menu start -->
-                    <div class="open-menu">
-                        <i class='bx bx-menu'></i>
-                    </div>
-                    <!-- <div class="close-menu">
-                        <i class='bx bx-x'></i>
-                    </div> -->
-                <!-- menu end -->
+
+                <div class="open-menu" id="menuToggle">
+                    <i class='bx bx-menu'></i>
+                </div> 
     
             </div>
         </div>
@@ -199,13 +194,13 @@
 
 
 
-
 <script>
     // footer current year
     const year = document.getElementById("year")
     const thisYear = new Date().getFullYear()
     year.setAttribute("datetime", thisYear)
     year.textContent = thisYear
+
 
 
     // sticky navbar
@@ -219,11 +214,32 @@
         mainNav.classList.remove("fixy")
     }
     })
+
+
+
+    // hamburger section
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+    const icon = menuToggle.querySelector("i");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+
+        if(navMenu.classList.contains("active")) {
+            icon.classList.remove("bx-menu");
+            icon.classList.add("bx-x");
+        } else {
+            icon.classList.remove("bx-x");
+            icon.classList.add("bx-menu");
+        }
+    });
+
+
 </script>
 
 
 
 <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
 </body>
 </html>
