@@ -753,6 +753,32 @@ nav {
 
 
 
+
+
+/* WHATSAPP */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #0c8f3f, #0c5c2e);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
 /* media query */
 @media (max-width: 1203px) {
     .main-nav-container .open-menu {
