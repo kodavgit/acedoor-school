@@ -256,6 +256,11 @@ nav {
 }
 
 
+.social-link a:hover {
+    transform: scale(1.1);
+}
+
+
 
 .container .contactform {
     position: absolute;
