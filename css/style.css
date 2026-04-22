@@ -1438,7 +1438,7 @@ nav {
         height: 80vh;
     }
     .header-swiper .swiper-slide .image-content {
-        width: 60%;    
+        width: 80%;    
         padding-left: 7%;
     }
     .header-swiper .swiper-slide .image-content h1 {
@@ -1453,6 +1453,18 @@ nav {
     }
     .about-content p {
         font-size: 14px;
+    }
+    .creche:hover {
+        border: none;
+        transform: none;
+    }
+    .nursery:hover {
+        border: none;
+        transform: none;
+    }
+    .primary:hover {
+        border: none;
+        transform: none;
     }
 }
 
@@ -1488,7 +1500,7 @@ nav {
 @media (max-width: 640px) {
     .header-swiper .swiper-slide .image-content {
         top: 8%;
-        width: 70%;    
+        width: 90%;    
         padding-left: 9%;
     }
     .about-wrapper {
