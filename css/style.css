@@ -1421,7 +1421,7 @@ nav {
 
 @media (max-width: 961px) {
     .header-swiper {
-        height: auto;
+        height: 80vh;
     }
     .header-swiper .swiper-slide .image-content {
         width: 60%;    
@@ -1519,7 +1519,7 @@ nav {
     .about {
         margin-top: 100px;
     }
-    .card {
+    /* .card {
         width: 390px;
         height: 190px;
     }
@@ -1544,7 +1544,7 @@ nav {
 
     .card:hover .card-front-content {
         transform: translateY(0);
-    }
+    } */
 }
 
 @media (max-width: 555px) {
@@ -1586,9 +1586,9 @@ nav {
 }
 
 @media (max-width: 396px) {
-    .header-swiper .swiper-slide .image-content h1 {
+    /* .header-swiper .swiper-slide .image-content h1 {
         font-size: 30px;
-    }
+    } */
     .header-swiper .swiper-button-prev,
     .header-swiper .swiper-button-next {
         opacity: 0;
