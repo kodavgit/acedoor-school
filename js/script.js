@@ -31,7 +31,6 @@ menuToggle.addEventListener("click", () => {
 
 
 
-
 // header swiper section
 
 const progressCircle = document.querySelector(".autoplay-progress svg");

@@ -44,7 +44,7 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    min-height: 70px;
+    min-height: 90px;
     margin: 0 auto;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .logo img {
-    width: 120px;
+    width: 150px;
 }
 
 .logo:hover {
@@ -135,6 +135,11 @@ nav {
     width: 109px;
 }
 
+
+
+
+
+
 /* Hamburger */
 .open-menu {
     display: none;
@@ -173,6 +178,10 @@ nav {
 
     .navbar.active {
         right: 0;
+    }
+
+    .navbar a:hover{
+        color: var(--nav-color);
     }
 
     .navbar a {
