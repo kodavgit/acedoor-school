@@ -174,7 +174,19 @@ p {
 }
 
 
-/* main nav */
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN NAV */
 .main-nav {
     width: 100%;
     background: #f8f8fc;
@@ -197,12 +209,8 @@ p {
     transition: 1s;
 }
 
-.logo {
-    color: var(--main-color);
-    font-weight: 600;
-    font-size: 28px;
-    text-shadow: var(--shadow);
-    transition: .5s;
+.logo img {
+    width: 120px;
 }
 
 .logo:hover {
@@ -280,12 +288,61 @@ nav {
     width: 109px;
 }
 
-.main-nav-container .open-menu{
+/* Hamburger */
+.open-menu {
     display: none;
 }
-.main-nav-container .open-menu i {
+
+.open-menu i {
     font-size: 30px;
+    cursor: pointer;
 }
+
+/* ========================= */
+/* MOBILE VIEW */
+/* ========================= */
+@media (max-width: 1203px) {
+
+    .open-menu {
+        display: block;
+        z-index: 1001;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        left: auto;
+        width: 160px;
+        height: 100vh;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        transition: 0.4s ease;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 18px;
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* REMOVE hover slider in mobile */
+    .navbar span {
+        display: none;
+    }
+}
+
+
 
 
 
@@ -312,19 +369,19 @@ nav {
   }
   
 .swiper-slide .img1 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/admission2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/gallery-1675672447.jpg);
     }
 .swiper-slide .img2 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/admission2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/latest-images/m6.jpg);
 }
 .swiper-slide .img3 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/gallery-1675672368.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/admission2.jpg);
 }
 .swiper-slide .img4 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/gallery-1675672576.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/new-image/n10.jpeg);
 }
 .swiper-slide .img5 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/gallery-1675672523.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/latest-images/m19.jpg);
 }
   
   .swiper-slide .image-content {
@@ -1329,43 +1386,10 @@ nav {
 
 
 @media (max-width: 1203px) {
-    .main-nav-container .open-menu {
-        display: block;
-        cursor: pointer;
-        z-index: 1001;
-    }
-    .navbar {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: 250px;
-        background: #e7f9ec;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 30px;
-        padding-left: 30px;
-        transition: 0.4s ease;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
-    }
-    .navbar a {
-        display: block;
-        width: 100%;
-        font-size: 18px;
-    }
-    .navbar.active {
-        right: 0;
-    }
-    .navbar span {
-        display: none;
-    }
     .about-wrapper {
         width: 90%;
     }
 }
-
-
-
 
 @media (max-width: 1072px) {
     .top-nav {
@@ -1377,14 +1401,6 @@ nav {
 }
 
 @media (max-width: 1110px) {
-    .logo {
-        font-size: 23px;
-    }
-
-    .navbar a {
-        font-size: 17px;
-    }
-
     .about-content h2 {
         font-size: 25px;
     }
@@ -1418,6 +1434,11 @@ nav {
 }
 
 @media (max-width: 885px) {
+    .swiper-slide .img-btn {
+        padding: 15px 30px;
+        text-transform: uppercase;
+        border: none;
+    }
     .about-wrapper {
         grid-template-columns: 1fr;
         width: 70%;

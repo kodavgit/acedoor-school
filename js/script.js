@@ -1,38 +1,16 @@
-// sticky navbar
+// Sticky Navbar
+const mainNav = document.querySelector(".main-nav");
+const mainNavOffset = mainNav.offsetTop;
 
-const mainNav = document.querySelector(".main-nav")
-const mainNavOffset = mainNav.offsetTop
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset >= mainNavOffset + 50) {
+        mainNav.classList.add("fixy");
+    } else {
+        mainNav.classList.remove("fixy");
+    }
+});
 
-window.addEventListener('scroll', () => {
-  if(window.pageYOffset >= mainNavOffset + 50) {
-    mainNav.classList.add("fixy")
-  }else {
-    mainNav.classList.remove("fixy")
-  }
-})
-
-
-
-// hamburger section
-
-// const hamburger = document.querySelector(".open-menu")
-// const hamburgerIcon = document.querySelector(".open-menu i")
-// const navbar = document.querySelector(".navbar")
-
-// hamburger.addEventListener("click", ()=>{
-//   navbar.classList.toggle("open-nav-menu")
-//   const isOpen = navbar.classList.contains("open-nav-menu")
-
-//   hamburgerIcon.classList = isOpen ? 'bx bx-x' : 'bx bx-menu'
-// })
-
-
-
-
-
-
-
-
+// Mobile Menu Toggle
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 const icon = menuToggle.querySelector("i");
@@ -40,18 +18,12 @@ const icon = menuToggle.querySelector("i");
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 
-    if(navMenu.classList.contains("active")) {
-        icon.classList.remove("bx-menu");
-        icon.classList.add("bx-x");
+    if (navMenu.classList.contains("active")) {
+        icon.classList.replace("bx-menu", "bx-x");
     } else {
-        icon.classList.remove("bx-x");
-        icon.classList.add("bx-menu");
+        icon.classList.replace("bx-x", "bx-menu");
     }
 });
-
-
-
-
 
 
 
