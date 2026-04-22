@@ -1440,6 +1440,18 @@ nav {
     .about-content p {
         font-size: 14px;
     }
+    .testimonial {
+        width: 100%;
+        height: 160vh;
+    }
+    .thumbnail {
+        width: 100px;
+        height: 100px;
+    }
+    .thumbnail img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 885px) {
@@ -1452,22 +1464,6 @@ nav {
         grid-template-columns: 1fr;
         width: 70%;
         gap: 20px;
-    }
-    .testimonial-section {
-        min-height: 145vh;
-    }
-    .testimonial-carousel {
-        min-height: 90vh;
-    }
-    .testimonial-carousel {
-        padding-top: 20px;
-    }
-    .testimonial-slider .wrapper{
-        flex-direction: column;
-    }
-    .wrapper .thumbnail {
-        width: 220px;
-        height: 180px;
     }
 }
 
@@ -1484,19 +1480,6 @@ nav {
 @media (max-width: 737px) {
     .about-content h2 {
         padding-top: 15px;
-    }
-}
-@media (max-width: 665px) {
-    .card {
-        width: 240px;
-        height: 140px;
-    }
-    .card-front-content h3 {
-        font-size: 17px;
-    }
-    
-    .card-front-content p {
-        font-size: 11px;
     }
 }
 
