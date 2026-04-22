@@ -1414,7 +1414,7 @@ nav {
 }
 
 @media (max-width: 961px) {
-    .swiper-slide {
+    .header-swiper {
         height: auto;
     }
     .header-swiper .swiper-slide .image-content {
