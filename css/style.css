@@ -351,7 +351,7 @@ nav {
 
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
   
 .swiper-slide {
@@ -1414,6 +1414,9 @@ nav {
 }
 
 @media (max-width: 961px) {
+    .swiper-slide {
+        height: auto;
+    }
     .header-swiper .swiper-slide .image-content {
         width: 60%;    
         padding-left: 7%;
