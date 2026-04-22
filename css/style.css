@@ -1501,7 +1501,7 @@ nav {
     .header-swiper .swiper-slide .image-content {
         top: 8%;
         width: 90%;    
-        padding-left: 9%;
+        padding:0 9%;
     }
     .about-wrapper {
         width: 85%;
