@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 // Sticky Navbar
 const mainNav = document.querySelector(".main-nav");
 const mainNavOffset = mainNav.offsetTop;
