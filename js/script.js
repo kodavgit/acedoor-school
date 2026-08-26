@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 // Sticky Navbar
 const mainNav = document.querySelector(".main-nav");
 const mainNavOffset = mainNav.offsetTop;
@@ -9,24 +17,6 @@ window.addEventListener("scroll", () => {
         mainNav.classList.remove("fixy");
     }
 });
-
-// Mobile Menu Toggle
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
-const icon = menuToggle.querySelector("i");
-
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-
-    if (navMenu.classList.contains("active")) {
-        icon.classList.replace("bx-menu", "bx-x");
-    } else {
-        icon.classList.replace("bx-x", "bx-menu");
-    }
-});
-
-
-
 
 
 
